@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <!-- add onsubmit event to the from element -->
+    <form id="reg-form">
+        <h4>User Register Page</h4>
+         <div>
+            <label for="username">User Name:</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" minlength="3" required>
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" name="contact" id="contact" 
+            minlength="10" maxlength="10" pattern="[0-9]+" required>
+        </div>
+        <div>
+            <label for="email">Email ID:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="email">Address:</label>
+            <textarea name="address" required name="address" minlength="10" id="" cols="30" rows="2"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Register" id="register"/>
+        </div>
+    </form>
+    <!-- Add script tag here -->
+</body>
+</html>
