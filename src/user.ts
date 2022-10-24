@@ -9,7 +9,36 @@ class User {
 //constuctor 
 
 //getter and setter methods
-
+    public get username(): string {
+        return this._username;
+    }
+    public set username(value: string) {
+        this._username = value;
+    }
+    public get password(): string {
+        return this._password;
+    }
+    public set password(value: string) {
+        this._password = value;
+    }
+    public get contactNumber(): number {
+        return this._contactNumber;
+    }
+    public set contactNumber(value: number) {
+        this._contactNumber = value;
+    }
+    public get email(): string {
+        return this._email;
+    }
+    public set email(value: string) {
+        this._email = value;
+    }
+    public get address(): string {
+        return this._address;
+    }
+    public set address(value: string) {
+        this._address = value;
+    }
 
 }
 
