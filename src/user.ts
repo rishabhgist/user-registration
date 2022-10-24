@@ -7,7 +7,13 @@ class User {
     private _email: string;
     private _address: string;
 //constuctor 
-
+    constructor(username: string, password: string, contactNumber: number, email: string, address: string) {
+        this._username = username;
+        this._password = password;
+        this._contactNumber = contactNumber;
+        this._email = email;
+        this._address = address;
+    }
 //getter and setter methods
     public get username(): string {
         return this._username;
