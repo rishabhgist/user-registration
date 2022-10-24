@@ -47,10 +47,13 @@ class User {
     }
 
 }
-
+let data = [];
 //Fetch form values using Object.fromentries()
 const submitUser = (formData: any) => {
-
+    formData.preventDefault();
+    const data = new FormData(formData.target);
+    const value = Object.fromEntries(data.entries());
+    const user = new User(`${value.username}`, `${value.password}`, Number(value.contactNumber), `${value.email}`, `${value.address}`);
     //call registerUser method with the constructed User object
 }
 
