@@ -15,34 +15,34 @@ class User {
         this._address = address;
     }
 //getter and setter methods
-    public get username(): string {
+    get username(): string {
         return this._username;
     }
-    public set username(value: string) {
+    set username(value: string) {
         this._username = value;
     }
-    public get password(): string {
+    get password(): string {
         return this._password;
     }
-    public set password(value: string) {
+    set password(value: string) {
         this._password = value;
     }
-    public get contactNumber(): number {
+    get contactNumber(): number {
         return this._contactNumber;
     }
-    public set contactNumber(value: number) {
+    set contactNumber(value: number) {
         this._contactNumber = value;
     }
-    public get email(): string {
+    get email(): string {
         return this._email;
     }
-    public set email(value: string) {
+    set email(value: string) {
         this._email = value;
     }
-    public get address(): string {
+    get address(): string {
         return this._address;
     }
-    public set address(value: string) {
+    set address(value: string) {
         this._address = value;
     }
 
