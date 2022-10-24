@@ -1,7 +1,11 @@
 //Define User class
 class User {
 //Field declartions
-
+    private _username: string;
+    private _password: string;
+    private _contactNumber: number;
+    private _email: string;
+    private _address: string;
 //constuctor 
 
 //getter and setter methods
