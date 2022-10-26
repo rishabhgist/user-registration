@@ -5,5 +5,5 @@
         "rootDir": "src" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
         "strict": true /* Enable all strict type-checking options. */,
     },
-    "include": ["src"]
+    "include": ["src", "public/js/user.js"]
   }
