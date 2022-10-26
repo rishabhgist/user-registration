@@ -46,10 +46,21 @@ const submitUser = (formData) => {
     formData.preventDefault();
     const data = new FormData(formData.target);
     const value = Object.fromEntries(data.entries());
-    console.log(value.username);
+    const user = new User(`${value.username}`, `${value.password}`, Number(value.contact), `${value.email}`, `${value.address}`);
     //call registerUser method with the constructed User object
+    registerUser(user);
 };
 //POST data using fetch() api
 function registerUser(user) {
-    //Dispay welcome message after successful registration
+    fetch('http://localhost:3000/users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(user),
+    }).then((response) => response.json()).then((data) => {
+        alert('Welcome to the Website'); //Dispay welcome message after successful registration 
+    }).catch((error) => {
+        console.log("Failed to save" + error);
+    });
 }

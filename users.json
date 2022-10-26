@@ -1,7 +1,20 @@
 {
   "users": [
     {
-      
-    }   
+      "username": "jhon.doe",
+      "password": "jhon@123",
+      "contactNumber": 543212345,
+      "email": "jhon.doe@hotmail.com",
+      "address": "123 South Daakota",
+      "id": 1
+    },
+    {
+      "_username": "maria.dense",
+      "_password": "maria@12",
+      "_contactNumber": 9565656565,
+      "_email": "maria@hotmail.com",
+      "_address": "Maria North Bvd Help ",
+      "id": 2
+    }
   ]
 }
